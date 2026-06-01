@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding of Ali & Raib</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b1320;
+    color:white;
+    overflow-x:hidden;
+}
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(11,19,32,.75),rgba(11,19,32,.75)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    color:#d4af37;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+.btn{
+    background:#d4af37;
+    color:#0b1320;
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:#d4af37;
+}
+
+.couple{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111c2e;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:300px;
+}
+
+.card h3{
+    color:#d4af37;
+    font-size:2rem;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.event{
+    text-align:center;
+    line-height:2;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:#111c2e;
+    padding:20px;
+    min-width:100px;
+    border-radius:15px;
+}
+
+.box h3{
+    color:#d4af37;
+    font-size:2rem;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.quote{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:2;
+}
+
+.footer{
+    text-align:center;
+    background:#09101b;
+    padding:50px 20px;
+}
+
+.footer h2{
+    color:#d4af37;
+    font-family:'Cormorant Garamond',serif;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:3rem;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div>
+<p>The Wedding Of</p>
+<h1>Ali & Raib</h1>
+
+<p>
+"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+untukmu pasangan hidup dari jenismu sendiri agar kamu memperoleh
+ketenangan padanya."
+<br>
+(QS. Ar-Rum: 21)
+</p>
+
+<a href="#mempelai" class="btn">Buka Undangan</a>
+</div>
+</section>
+
+<section id="mempelai">
+<div class="container">
+
+<div class="title">
+<h2>Mempelai</h2>
+</div>
+
+<div class="couple">
+
+<div class="card">
+<h3>Ali</h3>
+<p>Putra dari keluarga tercinta</p>
+</div>
+
+<div class="card">
+<h3>Raib</h3>
+<p>Putri dari keluarga tercinta</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Acara Pernikahan</h2>
+</div>
+
+<div class="event">
+<h3>Akad Nikah</h3>
+<p>Sabtu, 12 Desember 2026</p>
+<p>09.00 WIB</p>
+
+<br>
+
+<h3>Resepsi</h3>
+<p>Sabtu, 12 Desember 2026</p>
+<p>13.00 WIB</p>
+
+<br>
+
+<p>📍 Gedung Serbaguna Bahagia</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Menuju Hari Bahagia</h2>
+</div>
+
+<div class="countdown">
+
+<div class="box">
+<h3 id="days">0</h3>
+<p>Hari</p>
+</div>
+
+<div class="box">
+<h3 id="hours">0</h3>
+<p>Jam</p>
+</div>
+
+<div class="box">
+<h3 id="minutes">0</h3>
+<p>Menit</p>
+</div>
+
+<div class="box">
+<h3 id="seconds">0</h3>
+<p>Detik</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Galeri</h2>
+</div>
+
+<div class="gallery">
+<img src="https://picsum.photos/500/500?1">
+<img src="https://picsum.photos/500/500?2">
+<img src="https://picsum.photos/500/500?3">
+<img src="https://picsum.photos/500/500?4">
+<img src="https://picsum.photos/500/500?5">
+<img src="https://picsum.photos/500/500?6">
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Ucapan & Doa</h2>
+</div>
+
+<div class="quote">
+<p>
+"Semoga Allah memberkahi pernikahan ini dan menjadikannya
+keluarga yang sakinah, mawaddah, wa rahmah."
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Lokasi Acara</h2>
+</div>
+
+<div style="text-align:center;">
+<a class="btn" href="#">
+Lihat Lokasi
+</a>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+<h2>Ali & Raib</h2>
+<br>
+<p>
+Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+</p>
+<br>
+<p>Terima kasih.</p>
+</footer>
+
+<script>
+
+const targetDate = new Date("December 12, 2026 09:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = targetDate - now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
+
+</body>
+</html>
+```
+
+</body>
+</html>
